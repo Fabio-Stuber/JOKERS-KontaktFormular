@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&display=swap');
+
+body {
+    background-color: #06101b;
+}
+
+h1 {
+    font-family: "Satisfy", cursive;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    text-transform: uppercase;
+    font-size: 67px;
+    line-height: 92px;
+    text-align: center;
+
+
+}
+
+h2 {
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #beac74;
+
+}
+
+h3 {
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #beac74;
+    font-size: 16px;
+
+
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: white;
+}
+
+p.tiny {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.header {
+    overflow: hidden;
+    position: relative;
+}
+
+.headerimg {
+    opacity: 1.0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 120px;
+    height: auto;
+    background-image: url("paper.gif");
+    background-position: center center;
+    background-size: cover;
+    background-image: url(https://lh6.googleusercontent.com/TmT7m7nhlsiUaVwFIXHEwIH8btbaBsOtG2CsiQoG6_DY6UCjGxzZ4BxxJwVi-zMiSFyeff9IVTV0sgFm5RcFVz0=w16383);
+    filter: brightness(30%);
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.headertext {
+    padding: 60px;
+    position: relative;
+}
