@@ -9,7 +9,7 @@ h1 {
     font-family: "Satisfy", cursive;
     font-weight: 700;
     font-style: normal;
-    color: white;
+    color: #beac74;
     text-transform: uppercase;
     font-size: 67px;
     line-height: 92px;
@@ -38,7 +38,7 @@ h3 {
 
 }
 
-p {
+label {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -58,22 +58,6 @@ p.tiny {
 .header {
     overflow: hidden;
     position: relative;
-}
-
-.headerimg {
-    position: absolute;
-    opacity: 0.5;
-    background-color: 1px solid rgba(255, 255, 255, .4);
-    left: 0;
-    top: 0;
-    width: 100%;
-    padding: 180px;
-    height: auto;
-    background-position: center center;
-    background-size: cover;
-    background-image: url(../img/banner.jpg);
-
-
 }
 
 .headertext {
