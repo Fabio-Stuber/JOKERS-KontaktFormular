@@ -36,3 +36,7 @@ input[type=submit]:hover {
     background-color: #958450;
     color: #06101b;
 }
+
+input:user-invalid {
+    border: 5px solid red;
+}
