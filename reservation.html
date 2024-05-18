@@ -16,7 +16,7 @@
 		</head>
 	<body>
 		<div class="header">
-			<h1 class="headertext">KONTAKT FORMULAR</h1>
+			<h1 class="headertext">RESERVATIONS FORMULAR</h1>
 		</div>
 
 		<div style="max-width: 1000px; margin: auto">
@@ -30,9 +30,10 @@
 						value="https://fabio-stuber.github.io/jokers/submit">
 					<input type="hidden" name="_template" value="basic" />
 					<input type="hidden" name="_captcha" value="false" />
-					<input type="hidden" name="_subject" value="JOKERS: KONTAKT FORMULAR" />
+					<input type="hidden" name="_subject" value="JOKERS: RESERVATIONS FORMULAR" />
 
 					<div class="w3-row">
+
 						<div class="w3-half w3-container">					
 							<label for="Vorname">Vorname</label>
 							<input
@@ -42,6 +43,7 @@
 								name="Vorname"
 								placeholder="Dein Vorname..." />
 							</div>
+
 						<div class="w3-half w3-container">					
 							<label for="Nachname">Nachname</label>
 							<input
@@ -53,6 +55,7 @@
 							</div>
 					</div>
 
+				
 					<div class="w3 w3-container">
 						<label for="E-Mail">E-Mail Adresse</label>
 						<input
@@ -61,6 +64,39 @@
 							id="E-Mail"
 							name="E-Mail"
 							placeholder="Deine E-Mail Adresse..." />
+
+					</div>
+					<div class="w3-row">
+
+						<div class="w3-third w3-container">					
+							<label for="Datum">Datum</label>
+							<input
+							required
+								type="date"
+								id="Datum"
+								name="Datum" />
+							</div>
+
+							<div class="w3-third w3-container">					
+								<label for="Zeit">Zeit</label>
+								<input
+								required
+									type="time"
+									id="Zeit"
+									name="Zeit"
+									 />
+								</div>
+								<div class="w3-third w3-container">					
+									<label for="Personen">Anzahl Personen</label>
+									<input
+									required
+										type="number"
+										id="Personen"
+										name="Personen"
+										placeholder="Anzahl Personen..." />
+									</div>
+					</div>
+					<div class="w3 w3-container">
 
 							<label for="Beschreibung">Beschreibung</label>
 					<textarea
