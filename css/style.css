@@ -61,22 +61,23 @@ p.tiny {
 }
 
 .headerimg {
-    opacity: 1.0;
     position: absolute;
+    opacity: 0.5;
+    background-color: 1px solid rgba(255, 255, 255, .4);
     left: 0;
     top: 0;
     width: 100%;
-    padding: 120px;
+    padding: 180px;
     height: auto;
-    background-image: url("paper.gif");
     background-position: center center;
     background-size: cover;
     background-image: url(../img/banner.jpg);
-    filter: brightness(30%);
-    transform: translate3d(0px, 0px, 0px);
+
+
 }
 
 .headertext {
-    padding: 60px;
+    background-color: 1px solid rgba(255, 255, 255, .4);
+    padding: 80px;
     position: relative;
 }
