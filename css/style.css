@@ -66,14 +66,10 @@ p.tiny {
     line-height: 20px;
 }
 
-.header {
-    overflow: hidden;
-    position: relative;
-}
 
 .headertext {
     background-color: 1px solid rgba(255, 255, 255, .4);
-    padding: 80px;
+    padding-top: 80px;
     position: relative;
 }
 
