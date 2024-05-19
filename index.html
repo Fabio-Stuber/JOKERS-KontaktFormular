@@ -3,17 +3,11 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>KONTAKT FORMULAR</title>
-		<link rel="shortcut icon" href="css/favicon.png" type="image/x-icon">
-		<link
-			rel="stylesheet"
-			href="css/w3.css" />
-		<link
-			rel="stylesheet"
-			href="css/style.css" />
-			<link
-			rel="stylesheet"
-			href="css/form.css" />
-		</head>
+		<link rel="shortcut icon" href="css/favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" href="css/w3.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/form.css" />
+	</head>
 	<body>
 		<div class="header">
 			<h1 class="headertext">KONTAKT FORMULAR</h1>
@@ -23,58 +17,75 @@
 			<div class="w3-padding-32"></div>
 			<div class="w3-container">
 				<form
-					action="https://formsubmit.co/fabio.stuber@outlook.com" method="POST">
+					action="https://formsubmit.co/fabio.stuber@outlook.com"
+					method="POST">
 					<input
 						type="hidden"
 						name="_next"
-						value="https://fabio-stuber.github.io/jokers/submit">
+						value="https://fabio-stuber.github.io/jokers/submit" />
 					<input type="hidden" name="_template" value="basic" />
 					<input type="hidden" name="_captcha" value="false" />
-					<input type="hidden" name="_subject" value="JOKERS: KONTAKT FORMULAR" />
+					<input
+						type="hidden"
+						name="_subject"
+						value="JOKERS: KONTAKT FORMULAR" />
 
 					<div class="w3-row">
-						<div class="w3-half w3-container">					
+						<div class="w3-half w3-container">
 							<label for="Vorname">Vorname</label>
 							<input
-							required
+								required
 								type="text"
 								id="Vorname"
 								name="Vorname"
 								placeholder="Dein Vorname..." />
-							</div>
-						<div class="w3-half w3-container">					
+						</div>
+						<div class="w3-half w3-container">
 							<label for="Nachname">Nachname</label>
 							<input
-							required
+								required
 								type="text"
 								id="Nachname"
 								name="Nachname"
 								placeholder="Dein Nachname..." />
-							</div>
+						</div>
+					</div>
+
+					<div class="w3-row">
+						<div class="w3-half w3-container">
+							<label for="E-Mail">E-Mail Adresse</label>
+							<input
+								required
+								type="mail"
+								id="E-Mail"
+								name="E-Mail"
+								placeholder="Deine E-Mail Adresse..." />
+						</div>
+
+						<div class="w3-half w3-container">
+							<label for="Telefon">Telefon Nummer</label>
+							<input
+								required
+								type="tel"
+								id="Telefon"
+								name="Telefon"
+								placeholder="Deine Telefon Nummer..." />
+						</div>
 					</div>
 
 					<div class="w3 w3-container">
-						<label for="E-Mail">E-Mail Adresse</label>
-						<input
-						required
-							type="mail"
-							id="E-Mail"
-							name="E-Mail"
-							placeholder="Deine E-Mail Adresse..." />
+						<label for="Beschreibung">Beschreibung</label>
+						<textarea
+							id="Beschreibung"
+							name="Beschreibung"
+							placeholder="Beschreibung"
+							style="height: 200px"></textarea>
 
-							<label for="Beschreibung">Beschreibung</label>
-					<textarea
-						id="Beschreibung"
-						name="Beschreibung"
-						placeholder="Beschreibung"
-						style="height: 200px"></textarea>
-
-					<input type="submit" value="Einreichen" />
+						<input type="submit" value="Einreichen" />
 					</div>
-
-					
 				</form>
 			</div>
-		<div class="w3-padding-64"></div>
+			<div class="w3-padding-64"></div>
+		</div>
 	</body>
 </html>
