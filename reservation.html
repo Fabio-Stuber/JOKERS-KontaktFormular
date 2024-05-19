@@ -38,9 +38,10 @@
 								type="text"
 								id="Vorname"
 								name="Vorname"
-								placeholder="Dein Vorname..." />
+								placeholder="Dein Vorname..."
+								oninvalid="this.setCustomValidity('Dein Vorname...')"
+								oninput="this.setCustomValidity('')" />
 						</div>
-
 						<div class="w3-half w3-container">
 							<label for="Nachname">Nachname</label>
 							<input
@@ -48,7 +49,9 @@
 								type="text"
 								id="Nachname"
 								name="Nachname"
-								placeholder="Dein Nachname..." />
+								placeholder="Dein Nachname..."
+								oninvalid="this.setCustomValidity('Dein Nachname...')"
+								oninput="this.setCustomValidity('')" />
 						</div>
 					</div>
 
@@ -60,7 +63,9 @@
 								type="mail"
 								id="E-Mail"
 								name="E-Mail"
-								placeholder="Deine E-Mail Adresse..." />
+								placeholder="Deine E-Mail Adresse..."
+								oninvalid="this.setCustomValidity('Deine E-Mail Adresse...')"
+								oninput="this.setCustomValidity('')" />
 						</div>
 
 						<div class="w3-half w3-container">
@@ -70,18 +75,33 @@
 								type="tel"
 								id="Telefon"
 								name="Telefon"
-								placeholder="Deine Telefon Nummer..." />
+								placeholder="Deine Telefon Nummer..."
+								oninvalid="this.setCustomValidity('Deine Telefon Nummer...')"
+								oninput="this.setCustomValidity('')" />
 						</div>
 					</div>
+
 					<div class="w3-row">
 						<div class="w3-third w3-container">
 							<label for="Datum">Datum</label>
-							<input required type="date" id="Datum" name="Datum" />
+							<input
+								required
+								type="date"
+								id="Datum"
+								name="Datum"
+								oninvalid="this.setCustomValidity('Gib ein Datum ein...')"
+								oninput="this.setCustomValidity('')" />
 						</div>
 
 						<div class="w3-third w3-container">
 							<label for="Zeit">Zeit</label>
-							<input required type="time" id="Zeit" name="Zeit" />
+							<input
+								required
+								type="time"
+								id="Zeit"
+								name="Zeit"
+								oninvalid="this.setCustomValidity('Gib eine Zeit ein...')"
+								oninput="this.setCustomValidity('')" />
 						</div>
 						<div class="w3-third w3-container">
 							<label for="Personen">Anzahl Personen</label>
