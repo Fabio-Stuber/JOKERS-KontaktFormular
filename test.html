@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>KONTAKT FORMULAR</title>
+		<link rel="shortcut icon" href="css/favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" href="css/w3.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/form.css" />
+	</head>
+	<body>
+		<div class="header">
+			<h1 class="headertext">KONTAKT FORMULAR</h1>
+		</div>
+
+		<div style="max-width: 1000px; margin: auto">
+			<div class="w3-padding-32"></div>
+			<div class="w3-container">
+				<form id="form">
+					<div class="w3-row">
+						<div class="w3-half w3-container">
+							<label for="Vorname">Vorname</label>
+							<input
+								required
+								type="text"
+								id="Vorname"
+								name="Vorname"
+								placeholder="Dein Vorname..."
+								oninvalid="this.setCustomValidity('Dein Vorname...')"
+								oninput="this.setCustomValidity('')" />
+						</div>
+						<div class="w3-half w3-container">
+							<label for="Nachname">Nachname</label>
+							<input
+								required
+								type="text"
+								id="Nachname"
+								name="Nachname"
+								placeholder="Dein Nachname..."
+								oninvalid="this.setCustomValidity('Dein Nachname...')"
+								oninput="this.setCustomValidity('')" />
+						</div>
+					</div>
+
+					<div class="w3-row">
+						<div class="w3-half w3-container">
+							<label for="EMail">E-Mail Adresse</label>
+							<input
+								required
+								type="mail"
+								id="EMail"
+								name="EMail"
+								placeholder="Deine E-Mail Adresse..."
+								oninvalid="this.setCustomValidity('Deine E-Mail Adresse...')"
+								oninput="this.setCustomValidity('')" />
+						</div>
+
+						<div class="w3-half w3-container">
+							<label for="Telefon">Telefon Nummer</label>
+							<input
+								required
+								type="tel"
+								id="Telefon"
+								name="Telefon"
+								placeholder="Deine Telefon Nummer..."
+								oninvalid="this.setCustomValidity('Deine Telefon Nummer...')"
+								oninput="this.setCustomValidity('')" />
+						</div>
+					</div>
+
+					<div class="w3 w3-container">
+						<label for="Beschreibung">Beschreibung</label>
+						<textarea
+							id="Beschreibung"
+							name="Beschreibung"
+							placeholder="Beschreibung"
+							style="height: 200px"></textarea>
+
+						<input type="submit" id="submit" value="Einreichen" />
+					</div>
+				</form>
+			</div>
+			<div class="w3-padding-64"></div>
+		</div>
+		<script>
+			const form = document.querySelector("#form");
+			const scriptURL =
+				"https://script.google.com/macros/s/AKfycbx1M3AtAL62wqVKXM2XO2EZr_YzX2kyZzFZfYFN0SJOBsBKRkK7jgr5j9wixHPT7Rnm/exec";
+
+			form.addEventListener("submit", (e) => {
+				e.preventDefault();
+				let requestBody = new FormData(form);
+				fetch(scriptURL, {
+					redirect: "follow",
+					method: "POST",
+					body: requestBody,
+					headers: {},
+					mode: "no-cors",
+				})
+					.then((response) => {
+						window.location.href = "/submit.html";
+					})
+					.catch((error) => {
+						window.location.href = "/submit.html";
+					});
+			});
+		</script>
+	</body>
+</html>
