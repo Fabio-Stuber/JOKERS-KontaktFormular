@@ -1,5 +1,8 @@
 input,
 select {
+    -webkit-appearance: none !important;
+    -moz-appearance: none;
+    appearance: none;
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -10,6 +13,9 @@ select {
 }
 
 input[type=submit] {
+    -webkit-appearance: none !important;
+    -moz-appearance: none;
+    appearance: none;
     width: 100%;
     margin-top: 32px;
 
@@ -22,6 +28,9 @@ input[type=submit] {
 }
 
 textarea {
+    -webkit-appearance: none !important;
+    -moz-appearance: none;
+    appearance: none;
     margin: 8px 0;
     width: 100%;
     height: 150px;
@@ -34,10 +43,16 @@ textarea {
 }
 
 input[type=submit]:hover {
+    -webkit-appearance: none !important;
+    -moz-appearance: none;
+    appearance: none;
     background-color: #958450;
     color: #06101b;
 }
 
 input:user-invalid {
+    -webkit-appearance: none !important;
+    -moz-appearance: none;
+    appearance: none;
     border: 5px solid red;
 }
