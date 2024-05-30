@@ -11,8 +11,7 @@ h1 {
     font-style: normal;
     color: #beac74;
     text-transform: uppercase;
-    font-size: 67px;
-    line-height: 92px;
+    font-size: 40px;
     text-align: center;
 
 
@@ -33,7 +32,6 @@ h3 {
     font-style: normal;
     text-transform: uppercase;
     color: #beac74;
-    font-size: 16px;
 
 
 }
@@ -44,7 +42,7 @@ h3 {
     font-style: normal;
     text-transform: uppercase;
     color: black;
-    font-size: 20px;
+    font-size: 25px;
 
 
 }
@@ -58,14 +56,14 @@ label {
     color: black;
 }
 
-.w3-panel >p {
+.w3-panel > p {
     text-align: LEFT;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
     line-height: 30px;
-    color: white;
+    color: black;
 }
 
 p {
