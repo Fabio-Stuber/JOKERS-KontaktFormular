@@ -36,16 +36,6 @@ h3 {
 
 }
 
-.w3-panel > h3 {
-    font-family: "Satisfy", cursive;
-    font-weight: 400;
-    font-style: normal;
-    text-transform: uppercase;
-    color: black;
-    font-size: 25px;
-
-
-}
 
 label {
     font-family: "Roboto", sans-serif;
@@ -53,10 +43,10 @@ label {
     font-style: normal;
     font-size: 20px;
     line-height: 30px;
-    color: black;
+    color: white;
 }
 
-.w3-panel > p {
+.info {
     text-align: LEFT;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
