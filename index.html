@@ -1,97 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>KONTAKT FORMULAR</title>
-		<link rel="shortcut icon" href="css/favicon.png" type="image/x-icon" />
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="css/w3.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/form.css" />
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+		<link rel="shortcut icon" href="icons/gr1@4x.png" type="image/x-icon" />
+		<script src="main.js"></script>
+		<link rel="manifest" href="manifest.json" />
+
+		<meta name="author" content="Fabio Stuber" />
+
+		<title>JOKERS APP</title>
 	</head>
 	<body>
-		<div class="header">
-			<h1 class="headertext">KONTAKT FORMULAR</h1>
+		<!-- Header -->
+		<div class="w3-padding-top-64"><!-- SPACE --></div>
+		<header
+			class="w3-container w3-animate-top"
+			style="max-width: 1000px; margin: auto">
+			<!-- Input-->
+			<h1 class="" style="letter-spacing: 4px">joker's app</h1>
+		</header>
+
+		<div class="w3-padding-top-64"><!-- SPACE --></div>
+
+		<div class="w3-container" style="max-width: 1000px; margin: auto">
+			<button
+				id="installButton"
+				href=""
+				target="_blank"
+				class="w3-button w3-block w3-small w3-btn w3-padding">
+				APP INSTALIEREN
+			</button>
 		</div>
 
-		<div style="max-width: 1000px; margin: auto">
-			<div class="w3-padding-32"></div>
-			<div class="w3-container">
-				<form action="https://formsubmit.co/info@jokers-pub.ch" method="POST">
-					<input
-						type="hidden"
-						name="_next"
-						value="https://kontakt.jokers-pub.ch/submit" />
-					<input type="hidden" name="_template" value="basic" />
-					<input type="hidden" name="_captcha" value="false" />
-					<input
-						type="hidden"
-						name="_subject"
-						value="JOKERS: KONTAKT FORMULAR" />
+		<div class="w3-padding-top-64"><!-- SPACE --></div>
 
-					<div class="w3-row">
-						<div class="w3-half w3-container">
-							<label for="Vorname">Vorname</label>
-							<input
-								required
-								type="text"
-								id="Vorname"
-								name="Vorname"
-								placeholder="Dein Vorname..."
-								oninvalid="this.setCustomValidity('Dein Vorname...')"
-								oninput="this.setCustomValidity('')" />
-						</div>
-						<div class="w3-half w3-container">
-							<label for="Nachname">Nachname</label>
-							<input
-								required
-								type="text"
-								id="Nachname"
-								name="Nachname"
-								placeholder="Dein Nachname..."
-								oninvalid="this.setCustomValidity('Dein Nachname...')"
-								oninput="this.setCustomValidity('')" />
-						</div>
-					</div>
-
-					<div class="w3-row">
-						<div class="w3-half w3-container">
-							<label for="E-Mail">E-Mail Adresse</label>
-							<input
-								required
-								type="mail"
-								id="E-Mail"
-								name="E-Mail"
-								placeholder="Deine E-Mail Adresse..."
-								oninvalid="this.setCustomValidity('Deine E-Mail Adresse...')"
-								oninput="this.setCustomValidity('')" />
-						</div>
-
-						<div class="w3-half w3-container">
-							<label for="Telefon">Telefon Nummer</label>
-							<input
-								required
-								type="tel"
-								id="Telefon"
-								name="Telefon"
-								placeholder="Deine Telefon Nummer..."
-								oninvalid="this.setCustomValidity('Deine Telefon Nummer...')"
-								oninput="this.setCustomValidity('')" />
-						</div>
-					</div>
-
-					<div class="w3 w3-container">
-						<label for="Anliegen">Dein Anliegen</label>
-						<textarea
-							id="Anliegen"
-							name="Anliegen"
-							placeholder="Dein Anliegen..."
-							style="height: 200px"></textarea>
-
-						<input type="submit" value="Einreichen" />
-					</div>
-				</form>
+		<div class="w3-section w3-row" style="max-width: 1000px; margin: auto">
+			<div class="w3-half w3-container">
+				<img
+					id="About-Image-1"
+					src="images/Mokup.png"
+					class="w3-center"
+					style="width: 100%; border-radius: 10px" />
 			</div>
-			<div class="w3-padding-64"></div>
+			<div class="w3-half w3-container">
+				<h2 class="">APP</h2>
+				<p>
+					Die App zum lokalen Treffpunkt für Jung und Alt - JOKERS. Ob
+					Getränkekarte, Reservierungen oder unsere Events - alles in einer App.
+				</p>
+			</div>
 		</div>
 	</body>
 </html>
