@@ -10,14 +10,18 @@
 	</head>
 	<body>
 		<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3H8VES1W2D"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-3H8VES1W2D"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
 
-  gtag('config', 'G-3H8VES1W2D');
-</script>
+			gtag("config", "G-3H8VES1W2D");
+		</script>
 		<div class="header">
 			<h1 class="headertext">RESERVATIONS ANFRAGE FORMULAR</h1>
 		</div>
@@ -35,7 +39,10 @@
 		<div style="max-width: 1000px; margin: auto">
 			<div class="w3-padding-32"><span></span></div>
 			<div class="w3-container">
-				<form action="https://formsubmit.co/info@jokers-pub.ch" method="POST">
+				<form
+					action="https://formsubmit.co/info@jokers-pub.ch"
+					method="POST"
+					id="form">
 					<input
 						type="hidden"
 						name="_next"
@@ -144,8 +151,23 @@
 						<input type="submit" value="Einreichen" />
 					</div>
 				</form>
+				<div id="message">
+					<p>Vielen Dank für deine Anfrage. Wir melden uns bei dir.</p>
+					<input
+						type="submit"
+						value="Formular Schliessen"
+						onclick="window.location.href = 'https://www.jokers-pub.ch/kontakt'" />
+				</div>
 			</div>
 			<div class="w3-padding-64"></div>
 		</div>
+
+		<script>
+			document.getElementById("message").style.display = "none";
+			document.getElementById("form").onsubmit = function (e) {
+				document.getElementById("form").style.display = "none";
+				document.getElementById("message").style.display = "block";
+			};
+		</script>
 	</body>
 </html>
