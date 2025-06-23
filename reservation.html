@@ -1,168 +1,218 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>JOKERS RESERVATIONS ANFRAGE FORMULAR</title>
-		<link rel="shortcut icon" href="css/favicon.png" type="image/x-icon" />
-		<link rel="stylesheet" href="css/w3.css" />
-		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/form.css" />
-	</head>
-	<body>
-		<!-- Google tag (gtag.js) -->
-		<script
-			async
-			src="https://www.googletagmanager.com/gtag/js?id=G-3H8VES1W2D"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag("js", new Date());
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JOKERS RESERVATIONS ANFRAGE FORMULAR</title>
+    <link rel="shortcut icon" href="css/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/w3.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/form.css" />
+  </head>
+  <body>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-3H8VES1W2D"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-			gtag("config", "G-3H8VES1W2D");
-		</script>
-		<div class="header">
-			<h1 class="headertext">RESERVATIONS ANFRAGE FORMULAR</h1>
-		</div>
-		<div class="w3-padding-top-32"><!-- SPACE --></div>
+      gtag("config", "G-3H8VES1W2D");
+    </script>
+    <div class="header">
+      <h1 class="headertext">RESERVATIONS ANFRAGE FORMULAR</h1>
+    </div>
+    <div class="w3-padding-top-32"><!-- SPACE --></div>
 
-	<!--	 <div class="w3-container" style="max-width: 1000px; margin: auto">
+    <!--	 <div class="w3-container" style="max-width: 1000px; margin: auto">
 			<div class="w3-panel w3-pale-red w3-leftbar w3-border-red">
 				<p class="info" style="color: black; text-align: left">
 		<b>Eishockey-Weltmeisterschaft Finale:</b> <br />Für das Finale der Eishockey-Weltmeisterschaft am 23. Mai 2025 können keine Online-Reservierungen angenommen werden. <br/>Reservierungen sind vor Ort am Samstag möglich.				</p>
 			</div>
 		</div>-->
-		<div class="w3-padding-top-32"><!-- SPACE --></div>
+    <div class="w3-padding-top-32"><!-- SPACE --></div>
 
-		<div style="max-width: 1000px; margin: auto">
-			<div class="w3-padding-32"><span></span></div>
-			<div class="w3-container">
-				<form
-					action="https://formsubmit.co/info@jokers-pub.ch"
-					method="POST"
-					id="form">
-					<input
-						type="hidden"
-						name="_next"
-						value="https://kontakt.jokers-pub.ch/submit" />
-					<input type="hidden" name="_template" value="basic" />
-					<input type="hidden" name="_captcha" value="false" />
-					<input
-						type="hidden"
-						name="_subject"
-						value="JOKERS: RESERVATIONS FORMULAR" />
+    <div style="max-width: 1000px; margin: auto">
+      <div class="w3-padding-32"><span></span></div>
+      <div class="w3-container">
+        <form
+          action="https://formsubmit.co/info@jokers-pub.ch"
+          method="POST"
+          id="form"
+        >
+          <input
+            type="hidden"
+            name="_next"
+            value="https://kontakt.jokers-pub.ch/submit"
+          />
+          <input type="hidden" name="_template" value="basic" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input
+            type="hidden"
+            name="_subject"
+            value="JOKERS: RESERVATIONS FORMULAR"
+          />
 
-					<div class="w3-row">
-						<div class="w3-half w3-container">
-							<label for="Vorname">Vorname</label>
-							<input
-								required
-								type="text"
-								id="Vorname"
-								name="Vorname"
-								placeholder="Dein Vorname..."
-								oninvalid="this.setCustomValidity('Dein Vorname...')"
-								oninput="this.setCustomValidity('')" />
-						</div>
-						<div class="w3-half w3-container">
-							<label for="Nachname">Nachname</label>
-							<input
-								required
-								type="text"
-								id="Nachname"
-								name="Nachname"
-								placeholder="Dein Nachname..."
-								oninvalid="this.setCustomValidity('Dein Nachname...')"
-								oninput="this.setCustomValidity('')" />
-						</div>
-					</div>
+          <div class="w3-row">
+            <div class="w3-half w3-container">
+              <label for="Vorname">Vorname</label>
+              <input
+                required
+                type="text"
+                id="Vorname"
+                name="Vorname"
+                placeholder="Dein Vorname..."
+                oninvalid="this.setCustomValidity('Dein Vorname...')"
+                oninput="this.setCustomValidity('')"
+              />
+            </div>
+            <div class="w3-half w3-container">
+              <label for="Nachname">Nachname</label>
+              <input
+                required
+                type="text"
+                id="Nachname"
+                name="Nachname"
+                placeholder="Dein Nachname..."
+                oninvalid="this.setCustomValidity('Dein Nachname...')"
+                oninput="this.setCustomValidity('')"
+              />
+            </div>
+          </div>
 
-					<div class="w3-row">
-						<div class="w3-half w3-container">
-							<label for="E-Mail">E-Mail Adresse</label>
-							<input
-								required
-								type="mail"
-								id="E-Mail"
-								name="E-Mail"
-								placeholder="Deine E-Mail Adresse..."
-								oninvalid="this.setCustomValidity('Deine E-Mail Adresse...')"
-								oninput="this.setCustomValidity('')" />
-						</div>
+          <div class="w3-row">
+            <div class="w3-half w3-container">
+              <label for="E-Mail">E-Mail Adresse</label>
+              <input
+                required
+                type="mail"
+                id="E-Mail"
+                name="E-Mail"
+                placeholder="Deine E-Mail Adresse..."
+                oninvalid="this.setCustomValidity('Deine E-Mail Adresse...')"
+                oninput="this.setCustomValidity('')"
+              />
+            </div>
 
-						<div class="w3-half w3-container">
-							<label for="Telefon">Telefon Nummer</label>
-							<input
-								required
-								type="tel"
-								id="Telefon"
-								name="Telefon"
-								placeholder="Deine Telefon Nummer..."
-								oninvalid="this.setCustomValidity('Deine Telefon Nummer...')"
-								oninput="this.setCustomValidity('')" />
-						</div>
-					</div>
+            <div class="w3-half w3-container">
+              <label for="Telefon">Telefon Nummer</label>
+              <input
+                required
+                type="tel"
+                id="Telefon"
+                name="Telefon"
+                placeholder="Deine Telefon Nummer..."
+                oninvalid="this.setCustomValidity('Deine Telefon Nummer...')"
+                oninput="this.setCustomValidity('')"
+              />
+            </div>
+          </div>
 
-					<div class="w3-row">
-						<div class="w3-third w3-container">
-							<label for="Datum">Datum</label>
-							<input
-								required
-								type="date"
-								id="Datum"
-								name="Datum"
-								oninvalid="this.setCustomValidity('Gib ein Datum ein...')"
-								oninput="this.setCustomValidity('')" />
-						</div>
+          <div class="w3-row">
+            <div class="w3-third w3-container">
+              <label for="Datum">Datum</label>
+              <input
+                required
+                type="date"
+                id="Datum"
+                name="Datum"
+                oninvalid="this.setCustomValidity('Gib ein Datum ein...')"
+                oninput="this.setCustomValidity('')"
+				                max="2025-07-11"
+              />
+            </div>
 
-						<div class="w3-third w3-container">
-							<label for="Zeit">Zeit</label>
-							<input
-								required
-								type="time"
-								id="Zeit"
-								name="Zeit"
-								oninvalid="this.setCustomValidity('Gib eine Zeit ein...')"
-								oninput="this.setCustomValidity('')" />
-						</div>
-						<div class="w3-third w3-container">
-							<label for="Personen">Anzahl Personen</label>
-							<input
-								required
-								value="2"
-								min="1"
-								max="10"
-								type="number"
-								id="Personen"
-								name="Personen"
-								placeholder="Anzahl Personen..." />
-						</div>
-					</div>
-					<div class="w3 w3-container">
-						<label for="Anliegen">Dein Anliegen</label>
-						<textarea
-							id="Anliegen"
-							name="Anliegen"
-							placeholder="Dein Anliegen..."
-							style="height: 200px"></textarea>
+            <div class="w3-third w3-container">
+              <label for="Zeit">Zeit</label>
+              <input
+                required
+                type="time"
+                id="Zeit"
+                name="Zeit"
+                oninvalid="this.setCustomValidity('Gib eine Zeit ein...')"
+                oninput="this.setCustomValidity('')"
+              />
+            </div>
+            <div class="w3-third w3-container">
+              <label for="Personen">Anzahl Personen</label>
+              <input
+                required
+                value="2"
+                min="1"
+                max="10"
+                type="number"
+                id="Personen"
+                name="Personen"
+                placeholder="Anzahl Personen..."
+              />
+            </div>
+          </div>
+          <div class="w3 w3-container">
+            <label for="Anliegen">Dein Anliegen</label>
+            <textarea
+              id="Anliegen"
+              name="Anliegen"
+              placeholder="Dein Anliegen..."
+              style="height: 200px"
+            ></textarea>
 
-						<input type="submit" value="Einreichen" />
-					</div>
-				</form>
-				<div id="message" class="w3 w3-container">
-<p>Bitte warten... Anfrage wird versendet.</p>			
-				</div>
-			</div>
-			<div class="w3-padding-64"></div>
-		</div>
+            <input type="submit" value="Einreichen" />
+          </div>
+        </form>
+        <div id="message" class="w3 w3-container">
+          <p>Bitte warten... Anfrage wird versendet.</p>
+        </div>
+      </div>
+      <div class="w3-padding-64"></div>
+    </div>
 
-		<script>
-			document.getElementById("message").style.display = "none";
-			document.getElementById("form").onsubmit = function (e) {
-				document.getElementById("form").style.display = "none";
-				document.getElementById("message").style.display = "block";
-			};
-		</script>
-	</body>
+    <script>
+      document.getElementById("message").style.display = "none";
+      document.getElementById("form").onsubmit = function (e) {
+        document.getElementById("form").style.display = "none";
+        document.getElementById("message").style.display = "block";
+      };
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const dateInput = document.getElementById("Datum");
+
+        // Function to disable specific dates
+        function disableDates() {
+          const today = new Date();
+          // Set min date to today to prevent selecting past dates (optional)
+          dateInput.min = today.toISOString().split("T")[0];
+
+          dateInput.addEventListener("input", function () {
+            const selectedDate = new Date(this.value);
+            const dayOfWeek = selectedDate.getDay(); // 0 for Sunday, 1 for Monday, ..., 6 for Saturday
+
+            // Check if the selected date is Sunday (0) or Monday (1)
+            if (dayOfWeek === 0 || dayOfWeek === 1) {
+              alert("Sonntage und Montage können nicht ausgewählt werden.");
+              this.value = ""; // Clear the input
+              return;
+            }
+          });
+
+          // Add a function to programmatically disable dates (more robust)
+          // This is a common approach for date pickers that don't support direct disabling
+          // For the native HTML date input, we rely on the 'input' event to validate.
+          // If you were using a library like jQuery UI Datepicker, it would have direct options.
+          // For native input, we can visually indicate, but user can still technically select
+          // and then we clear it, which is what the 'input' event listener does.
+
+          // To provide a better UX, you might consider dynamically setting the 'min' and 'max' attributes
+          // and using a custom date picker library that allows precise date disabling.
+          // However, for the native HTML date input, the 'input' event validation is the most direct way.
+        }
+
+        disableDates();
+      });
+    </script>
+  </body>
 </html>
