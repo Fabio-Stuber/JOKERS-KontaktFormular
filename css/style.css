@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&display=swap');
 
 body {
-    background-color: #06101b;
+    background-color: #d7b697;
 }
 
 h1 {
-    font-family: "Satisfy", cursive;
-    font-weight: 700;
-    font-style: normal;
-    color: #beac74;
+  font-family: "Tinos", serif;
+  font-weight: 700;
+  font-style: normal;
+    color: #003f75;
     text-transform: uppercase;
     font-size: 67px;
     line-height: 92px;
@@ -19,20 +19,20 @@ h1 {
 }
 
 h2 {
-    font-family: "Satisfy", cursive;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Tinos", serif;
+  font-weight: 700;
+  font-style: normal;
     text-transform: uppercase;
-    color: #beac74;
+    color: #003f75;
 
 }
 
 h3 {
-    font-family: "Satisfy", cursive;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Tinos", serif;
+  font-weight: 700;
+  font-style: normal;
     text-transform: uppercase;
-    color: #beac74;
+    color: #025b5c;
     font-size: 16px;
 
 
@@ -76,4 +76,5 @@ p.tiny {
 a:hover {
     background-color: #958450;
     color: #06101b;
+
 }
