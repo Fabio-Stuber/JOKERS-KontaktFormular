@@ -7,7 +7,7 @@ select {
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 1px solid #003f75;
     border-radius: 4px;
     box-sizing: border-box;
 }
@@ -19,8 +19,8 @@ input[type=submit] {
     width: 100%;
     margin-top: 32px;
 
-    background-color: #beac74;
-    color: #06101b;
+    background-color: #003f75;
+    color: #ffffff;
     padding: 14px 20px;
     border: none;
     border-radius: 4px;
@@ -46,8 +46,8 @@ input[type=submit]:hover {
     -webkit-appearance: none !important;
     -moz-appearance: none;
     appearance: none;
-    background-color: #958450;
-    color: #06101b;
+    background-color: #025b5c;
+    color: #ffffff;
 }
 
 input:user-invalid {
@@ -55,4 +55,5 @@ input:user-invalid {
     -moz-appearance: none;
     appearance: none;
     border: 5px solid red;
+
 }
