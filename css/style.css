@@ -45,7 +45,7 @@ label {
     font-style: normal;
     font-size: 20px;
     line-height: 30px;
-    color: white;
+    color: #000000;
 }
 
 p {
@@ -55,7 +55,7 @@ p {
     font-style: normal;
     font-size: 20px;
     line-height: 30px;
-    color: white;
+    color: #000000;
 }
 
 p.tiny {
@@ -78,3 +78,4 @@ a:hover {
     color: #06101b;
 
 }
+
