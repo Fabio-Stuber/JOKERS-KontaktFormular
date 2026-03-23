@@ -189,8 +189,23 @@
         document.getElementById("form").style.display = "none";
         document.getElementById("message").style.display = "block";
       };
+
+
+      const picker = document.getElementById('Datum');
+const gesperrteTage = ['2026-03-25', '2026-04-01'];
+
+picker.addEventListener('input', function (e) {
+    if (gesperrteTage.includes(e.target.value)) {
+        alert('Dieses Datum ist nicht verfügbar!');
+        e.target.value = ''; // Datum zurücksetzen
+    }
+});
     </script>
   <!--  <script>
+
+
+
+    
       document.addEventListener("DOMContentLoaded", function () {
         const dateInput = document.getElementById("Datum");
 
