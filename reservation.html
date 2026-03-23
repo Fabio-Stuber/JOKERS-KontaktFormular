@@ -196,7 +196,7 @@ const gesperrteTage = ['2026-03-25', '2026-04-01'];
 
 picker.addEventListener('input', function (e) {
     if (gesperrteTage.includes(e.target.value)) {
-        alert('Dieses Datum ist nicht verfügbar!');
+        alert('An diesem Datum ist keine Reservation möglich!');
         e.target.value = ''; // Datum zurücksetzen
     }
 });
