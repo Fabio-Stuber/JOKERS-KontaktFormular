@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>JOKERS RESERVATIONS ANFRAGE FORMULAR</title>
 
-    <link rel="shortcut icon" href="css/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="css/w3.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/form.css" />
-  </head>
-  <body>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-3H8VES1W2D"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JOKERS RESERVATIONS ANFRAGE FORMULAR</title>
 
-      gtag("config", "G-3H8VES1W2D");
-    </script>
-    <div class="header">
-      <h1 class="headertext">RESERVATIONS ANFRAGE FORMULAR</h1>
-    </div>
-    <div class="w3-padding-top-32"><!-- SPACE --></div>
+  <link rel="shortcut icon" href="css/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="css/w3.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/form.css" />
+</head>
 
-<!-- <div class="w3-container" style="max-width: 1000px; margin: auto">
-      <div class="w3-panel w3-pale-red w3-leftbar w3-border-red">
+<body>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3H8VES1W2D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-3H8VES1W2D");
+  </script>
+  <div class="header">
+    <h1 class="headertext">RESERVATIONS ANFRAGE FORMULAR</h1>
+  </div>
+  <div class="w3-padding-top-32"><!-- SPACE --></div>
+
+  <!-- 
+  <div class="w3-container" style="max-width: 1000px; margin: auto">
+      
+    <div class="w3-panel w3-pale-red w3-leftbar w3-border-red">
         <p class="info" style="color: black; text-align: left">
           <b>SOMMERPAUSE JOKER'S</b> 12. JULI BIS 11. SEPTEMBER <br /><br />
           Das Pub macht Pause, aber nicht ohne Grund:
@@ -47,200 +48,163 @@
         </p>
       </div>
     </div>
-    <div class="w3-padding-top-32"></div> // SPACE-->
-
-    <div style="max-width: 1000px; margin: auto">
-      <div class="w3-padding-32"><span></span></div>
-      <div class="w3-container">
-        <form
-          action="https://formsubmit.co/info@jokers-pub.ch"
-          method="POST"
-          id="form"
-        >
-          <input
-            type="hidden"
-            name="_next"
-            value="https://kontakt.jokers-pub.ch/submit"
-          />
-          <input type="hidden" name="_template" value="basic" />
-          <input type="hidden" name="_captcha" value="false" />
-          <input
-            type="hidden"
-            name="_subject"
-            value="JOKERS: RESERVATIONS FORMULAR"
-          />
-
-          <div class="w3-row">
-            <div class="w3-half w3-container">
-              <label for="Vorname">Vorname</label>
-              <input
-                required
-                type="text"
-                id="Vorname"
-                name="Vorname"
-                placeholder="Dein Vorname..."
-                oninvalid="this.setCustomValidity('Dein Vorname...')"
-                oninput="this.setCustomValidity('')"
-              />
-            </div>
-            <div class="w3-half w3-container">
-              <label for="Nachname">Nachname</label>
-              <input
-                required
-                type="text"
-                id="Nachname"
-                name="Nachname"
-                placeholder="Dein Nachname..."
-                oninvalid="this.setCustomValidity('Dein Nachname...')"
-                oninput="this.setCustomValidity('')"
-              />
-            </div>
-          </div>
-
-          <div class="w3-row">
-            <div class="w3-half w3-container">
-              <label for="E-Mail">E-Mail Adresse</label>
-              <input
-                required
-                type="mail"
-                id="E-Mail"
-                name="E-Mail"
-                placeholder="Deine E-Mail Adresse..."
-                oninvalid="this.setCustomValidity('Deine E-Mail Adresse...')"
-                oninput="this.setCustomValidity('')"
-              />
-            </div>
-
-            <div class="w3-half w3-container">
-              <label for="Telefon">Telefon Nummer</label>
-              <input
-                required
-                type="tel"
-                id="Telefon"
-                name="Telefon"
-                placeholder="Deine Telefon Nummer..."
-                oninvalid="this.setCustomValidity('Deine Telefon Nummer...')"
-                oninput="this.setCustomValidity('')"
-              />
-            </div>
-          </div>
-
-          <div class="w3-row">
-            <div class="w3-third w3-container">
-              <label for="Datum">Datum</label>
-              <input
-                required
-                type="date"
-                id="Datum"
-                name="Datum"
-                oninvalid="this.setCustomValidity('Gib ein Datum ein...')"
-                oninput="this.setCustomValidity('')"
-                min="2025-09-12"
-              />
-            </div>
-
-            <div class="w3-third w3-container">
-              <label for="Zeit">Zeit</label>
-              <input
-                required
-                type="time"
-                id="Zeit"
-                name="Zeit"
-                oninvalid="this.setCustomValidity('Gib eine Zeit ein...')"
-                oninput="this.setCustomValidity('')"
-              />
-            </div>
-            <div class="w3-third w3-container">
-              <label for="Personen">Anzahl Personen</label>
-              <input
-                required
-                value="2"
-                min="1"
-                max="10"
-                type="number"
-                id="Personen"
-                name="Personen"
-                placeholder="Anzahl Personen..."
-              />
-            </div>
-          </div>
-          <div class="w3 w3-container">
-            <label for="Anliegen">Dein Anliegen</label>
-            <textarea
-              id="Anliegen"
-              name="Anliegen"
-              placeholder="Dein Anliegen..."
-              style="height: 200px"
-            ></textarea>
-
-            <input type="submit" value="Einreichen" />
-          </div>
-        </form>
-        <div id="message" class="w3 w3-container">
-          <p>Bitte warten... Anfrage wird versendet.</p>
-        </div>
-      </div>
-      <div class="w3-padding-64"></div>
-    </div>
-
-    <script>
-      document.getElementById("message").style.display = "none";
-      document.getElementById("form").onsubmit = function (e) {
-        document.getElementById("form").style.display = "none";
-        document.getElementById("message").style.display = "block";
-      };
-
-
-      const picker = document.getElementById('Datum');
-const gesperrteTage = ['2026-03-25', '2026-04-01'];
-
-picker.addEventListener('input', function (e) {
-    if (gesperrteTage.includes(e.target.value)) {
-        alert('An diesem Datum ist keine Reservation möglich!');
-        e.target.value = ''; // Datum zurücksetzen
-    }
-});
-    </script>
-  <!--  <script>
-
-
-
     
-      document.addEventListener("DOMContentLoaded", function () {
-        const dateInput = document.getElementById("Datum");
+    <div class="w3-padding-top-32"></div>
+   </div>
+   -->
 
-        // Function to disable specific dates
-        function disableDates() {
-          const today = new Date();
-          // Set min date to today to prevent selecting past dates (optional)
-          dateInput.min = today.toISOString().split("T")[0];
+  <div style="max-width: 1000px; margin: auto">
+    <div class="w3-padding-32"><span></span></div>
+    <div class="w3-container">
+      <form action="https://formsubmit.co/info@jokers-pub.ch" method="POST" id="form">
+        <input type="hidden" name="_next" value="https://kontakt.jokers-pub.ch/submit" />
+        <input type="hidden" name="_template" value="basic" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_subject" value="JOKERS: RESERVATIONS FORMULAR" />
 
-          dateInput.addEventListener("input", function () {
-            const selectedDate = new Date(this.value);
-            const dayOfWeek = selectedDate.getDay(); // 0 for Sunday, 1 for Monday, ..., 6 for Saturday
+        <div class="w3-row">
+          <div class="w3-half w3-container">
+            <label for="Vorname">Vorname</label>
+            <input required type="text" id="Vorname" name="Vorname" placeholder="Dein Vorname..."
+              oninvalid="this.setCustomValidity('Dein Vorname...')" oninput="this.setCustomValidity('')" />
+          </div>
+          <div class="w3-half w3-container">
+            <label for="Nachname">Nachname</label>
+            <input required type="text" id="Nachname" name="Nachname" placeholder="Dein Nachname..."
+              oninvalid="this.setCustomValidity('Dein Nachname...')" oninput="this.setCustomValidity('')" />
+          </div>
+        </div>
 
-            // Check if the selected date is Sunday (0) or Monday (1)
-            if (dayOfWeek === 0 || dayOfWeek === 1) {
-              alert("Sonntage und Montage können nicht ausgewählt werden.");
-              this.value = ""; // Clear the input
-              return;
-            }
-          });
+        <div class="w3-row">
+          <div class="w3-half w3-container">
+            <label for="E-Mail">E-Mail Adresse</label>
+            <input required type="mail" id="E-Mail" name="E-Mail" placeholder="Deine E-Mail Adresse..."
+              oninvalid="this.setCustomValidity('Deine E-Mail Adresse...')" oninput="this.setCustomValidity('')" />
+          </div>
 
-          // Add a function to programmatically disable dates (more robust)
-          // This is a common approach for date pickers that don't support direct disabling
-          // For the native HTML date input, we rely on the 'input' event to validate.
-          // If you were using a library like jQuery UI Datepicker, it would have direct options.
-          // For native input, we can visually indicate, but user can still technically select
-          // and then we clear it, which is what the 'input' event listener does.
+          <div class="w3-half w3-container">
+            <label for="Telefon">Telefon Nummer</label>
+            <input required type="tel" id="Telefon" name="Telefon" placeholder="Deine Telefon Nummer..."
+              oninvalid="this.setCustomValidity('Deine Telefon Nummer...')" oninput="this.setCustomValidity('')" />
+          </div>
+        </div>
 
-          // To provide a better UX, you might consider dynamically setting the 'min' and 'max' attributes
-          // and using a custom date picker library that allows precise date disabling.
-          // However, for the native HTML date input, the 'input' event validation is the most direct way.
+        <div class="w3-row">
+          <div class="w3-third w3-container">
+            <label for="Datum">Datum</label>
+            <input required type="date" id="Datum" name="Datum"
+              oninvalid="this.setCustomValidity('Gib ein Datum ein...')" oninput="this.setCustomValidity('')"
+              min="2025-09-12" />
+          </div>
+
+          <div class="w3-third w3-container">
+            <label for="Zeit">Zeit</label>
+            <input required type="time" id="Zeit" name="Zeit" oninvalid="this.setCustomValidity('Gib eine Zeit ein...')"
+              oninput="this.setCustomValidity('')" />
+          </div>
+          <div class="w3-third w3-container">
+            <label for="Personen">Anzahl Personen</label>
+            <input required value="2" min="1" max="10" type="number" id="Personen" name="Personen"
+              placeholder="Anzahl Personen..." />
+          </div>
+        </div>
+        <div class="w3 w3-container">
+          <label for="Anliegen">Dein Anliegen</label>
+          <textarea id="Anliegen" name="Anliegen" placeholder="Dein Anliegen..." style="height: 200px"></textarea>
+
+          <input type="submit" value="Einreichen" />
+        </div>
+      </form>
+      <div id="message" class="w3 w3-container">
+        <p>Bitte warten... Anfrage wird versendet.</p>
+      </div>
+    </div>
+    <div class="w3-padding-64"></div>
+  </div>
+
+
+  <script>
+    // Diese Funktion wird ausgefuehrt, sobald die Seite geladen ist
+    window.addEventListener("DOMContentLoaded", function () {
+      // Wir holen uns die Parameter aus der Adresszeile (URL)
+      const urlParams = new URLSearchParams(window.location.search);
+
+      // 1. Datum ausfuellen
+      const datum = urlParams.get('datum');
+      if (datum) {
+        document.getElementById('Datum').value = datum;
+      }
+
+      // 2. Zeit ausfuellen
+      const zeit = urlParams.get('zeit');
+      if (zeit) {
+        document.getElementById('Zeit').value = zeit;
+      }
+
+      // 3. Anliegen ausfuellen
+      const anliegen = urlParams.get('anliegen');
+      if (anliegen) {
+        document.getElementById('Anliegen').value = anliegen;
+      }
+    });
+  </script>
+
+  <script>
+    document.getElementById("message").style.display = "none";
+    document.getElementById("form").onsubmit = function (e) {
+      document.getElementById("form").style.display = "none";
+      document.getElementById("message").style.display = "block";
+    };
+
+  </script>
+  <script>
+    // Datum Sperren
+    const gesperrteTage = ['2026-03-25', '2026-04-01'];
+    const picker = document.getElementById('Datum');
+
+    picker.addEventListener('input', function (e) {
+      if (gesperrteTage.includes(e.target.value)) {
+        alert('Wir sind ausgebucht. Eine Reservierung ist an diesem Datum nicht mehr möglich!');
+        e.target.value = '';
+      }
+    });
+  </script>
+
+  <script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const dateInput = document.getElementById("Datum");
+
+      // 1. Liste der Tage, an denen Montag/Sonntag erlaubt ist
+      const eventTage = [];
+
+      // 2. Verhindern, dass vergangene Tage gewaehlt werden
+      const today = new Date().toISOString().split("T")[0];
+      dateInput.min = today;
+
+      // 3. Pruefung bei jeder Auswahl
+      dateInput.addEventListener("input", function () {
+        const selectedValue = this.value; // Das gewaehlte Datum (z.B. "2026-03-29")
+        const selectedDate = new Date(selectedValue);
+        const dayOfWeek = selectedDate.getDay();
+
+        // PRUEFUNG: Ist das Datum in der Ausnahme-Liste?
+        const istEventTag = eventTage.includes(selectedValue);
+
+        // Wenn es KEIN Event-Tag ist, gelten die Sperrtage
+        if (!istEventTag) {
+          if (dayOfWeek === 0 || dayOfWeek === 1) {
+            alert("An diesem Tag ist das Joker's Pub geschlossen. Bitte wählen Sie ein anderes Datum.");
+            this.value = "";
+          }
         }
-
-        disableDates();
+        // Wenn es ein Event-Tag ist, passiert nichts – die Auswahl bleibt gueltig!
       });
-    </script> -->
-  </body>
+    });
+
+
+
+  </script>
+</body>
+
 </html>
