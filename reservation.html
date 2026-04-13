@@ -159,10 +159,10 @@
   </script>
   <script>
     // Datum Sperren
-    const gesperrteTage = ['2026-03-25', '2026-04-21'];
+    const gesperrteTage = ['2026-03-25', '2026-04-01', '2026-04-21'];
     const picker = document.getElementById('Datum');
 
-    picker.addEventListener('input', function (e) {
+    picker.addEventListener('change', function (e) {
       if (gesperrteTage.includes(e.target.value)) {
         alert('Wir sind ausgebucht. Eine Reservierung ist an diesem Datum nicht mehr möglich!');
         e.target.value = '';
@@ -183,7 +183,7 @@
       dateInput.min = today;
 
       // 3. Pruefung bei jeder Auswahl
-      dateInput.addEventListener("input", function () {
+      dateInput.addEventListener("change", function () {
         const selectedValue = this.value; // Das gewaehlte Datum (z.B. "2026-03-29")
         const selectedDate = new Date(selectedValue);
         const dayOfWeek = selectedDate.getDay();
