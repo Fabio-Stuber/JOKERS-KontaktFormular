@@ -53,6 +53,18 @@
    </div>
    -->
 
+  <div class="w3-container" style="max-width: 1000px; margin: auto">
+      
+    <div class="w3-panel w3-pale-red w3-leftbar w3-border-red">
+        <p class="info" style="color: black; text-align: left">
+Für das Hockey-WM-Finale nehmen wir keine weiteren Online-Reservierungen an.
+        </p>
+      </div>
+    </div>
+    
+    <div class="w3-padding-top-32"></div>
+   </div>
+  
   <div style="max-width: 1000px; margin: auto">
     <div class="w3-padding-32"><span></span></div>
     <div class="w3-container">
@@ -165,6 +177,19 @@
     picker.addEventListener('change', function (e) {
       if (gesperrteTage.includes(e.target.value)) {
         alert('Wir sind ausgebucht. Eine Reservierung ist an diesem Datum nicht mehr möglich!');
+        e.target.value = '';
+      }
+    });
+  </script>
+
+    <script>
+    // Datum Sperren
+    const gesperrteTage1 = ['2026-05-30', '2026-05-31', '2026-06-01'];
+    const picker1 = document.getElementById('Datum');
+
+    picker1.addEventListener('change', function (e) {
+      if (gesperrteTage1.includes(e.target.value)) {
+        alert('Für das Hockey-WM-Finale nehmen wir keine weiteren Online-Reservierungen an.');
         e.target.value = '';
       }
     });
