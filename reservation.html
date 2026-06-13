@@ -174,12 +174,12 @@
 
     <script>
         // Datum Sperren
-        const gesperrteTage1 = ['2026-05-30', '2026-05-31', '2026-06-01'];
+        const gesperrteTage1 = ['2026-06-13', '2026-06-18', '2026-06-24'];
         const picker1 = document.getElementById('Datum');
 
         picker1.addEventListener('change', function (e) {
             if (gesperrteTage1.includes(e.target.value)) {
-                alert('Für das Hockey-WM-Finale nehmen wir keine weiteren Online-Reservierungen an.');
+                alert('Keine Reservationen für Fussballspiele und die WM Lounge');
                 e.target.value = '';
             }
         });
