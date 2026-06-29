@@ -1,119 +1,531 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html class="scroll-smooth dark" lang="de">
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>JOKERS KONTAKT FORMULAR</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="shortcut icon" href="css/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="css/w3.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/form.css" />
-</head>
+        <!-- Search Engine Optimization -->
+        <title>Fabio Stuber | Visuelle Kommunikation & Mediamatik Herzogenbuchsee</title>
+        <meta name="description" content="Kreative Ideen zum Leben erweckt. Fabio Stuber ist dein Spezialist für visuelle Kommunikation, Webdesign, Grafik und Mediamatik in Herzogenbuchsee." />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.fabio-stuber.com/" />
+        <!-- Favicon mit automatischem Hell-/Dunkelwechsel -->
+        <link rel="icon" type="image/svg+xml" href="img/Logo-FabioStuber.svg" />
 
-<body>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3H8VES1W2D"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
+        <!-- Open-Graph / Facebook / LinkedIn -->
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Fabio Stuber | Visuelle Kommunikation & Mediamatik" />
+        <meta property="og:description" content="Kreative Ideen zum Leben erweckt. Spezialist für visuelle Kommunikation, Webdesign und Mediengestaltung." />
+        <meta property="og:url" content="https://www.fabio-stuber.com/" />
+        <meta property="og:image" content="https://www.fabio-stuber.com/img/Background-FabioStuber.jpg" />
+        <meta property="og:locale" content="de_CH" />
+
+        <!-- Structured Data (Local Business / Person) -->
+        <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Fabio Stuber",
+        "image": "https://www.fabio-stuber.com/img/Background-FabioStuber.jpg",
+        "url": "https://www.fabio-stuber.com/",
+        "telephone": "+41797300926",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Mühleweg 12",
+            "postalCode": "3360",
+            "addressLocality": "Herzogenbuchsee",
+            "addressCountry": "CH"
+        },
+        "sameAs": [
+            "https://www.linkedin.com/in/fabio-stuber"
+        ],
+        "jobTitle": "Mediamatiker EFZ",
+        "description": "Spezialist für alle Aspekte der visuellen Kommunikation, Webentwicklung und Grafikdesign."
         }
-        gtag("js", new Date());
+        </script>
 
-        gtag("config", "G-3H8VES1W2D");
-    </script>
+        <!--  Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet">
 
-    <div class="header">
-        <h1 class="headertext">KONTAKT FORMULAR</h1>
-    </div>
+        <!-- Tailwind-Script -->
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <div class="w3-padding-top-32"><!-- SPACE --></div>
+        <!-- Stylesheet -->
+        <style type="text/tailwindcss">
+            @custom-variant dark (&:where(.dark, .dark *));
+    
+            @theme {
+                --font-sans: 'Maven Pro', sans-serif;
+            }
 
-    <!-- INFO PANEL -->
-<!--
-    <div class="w3-container" style="max-width: 1000px; margin: auto">
+            /* Diese neue Animation kombiniert den Farbfluss mit dem Pulsieren */
+            @keyframes lebendig {
+                0%, 100% { 
+                    background-position: 0% center;
+                    filter: drop-shadow(0 0 8px rgba(45, 212, 191, 0.2));
+                }
+                50% { 
+                    background-position: 100% center;
+                    filter: drop-shadow(0 0 25px rgba(45, 212, 191, 0.6));
+                }
+            }
+        </style>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
 
-        <div class="w3-panel w3-pale-red w3-leftbar w3-border-red">
-            <p class="info" style="color: black; text-align: left">
-                <b>Keine Reservationen für Fussballspiele und die WM Lounge</b><br /><br />
-                Wir freuen uns auf tolle Spiele! 
-                Bitte haben Sie jedoch Verständnis dafür, dass wir für die WM-Lounge und sämtliche Fussballspiele keine
-                Reservierungen entgegennehmen. <br />
-                Dies ist ausschliesslich unseren Sponsoren und Partnern vorbehalten.
-            </p>
-        </div>
-    </div>
+    <body class="text-gray-900 bg-white dark:bg-gray-950 dark:text-gray-100 transition-colors duration-200 flex flex-col min-h-screen selection:bg-teal-500 selection:text-white dark:selection:bg-teal-400 dark:selection:text-gray-950">
+        <!-- Navigation -->
+        <header id="navigation"></header>
 
-    <div class="w3-padding-top-32"></div>
-    </div>
--->
-    <!-- INFO PANEL -->
+        <!-- Content -->
+        <main class="grow mb-16">
+            <!-- Hero Section -->
+            <section class="no-copy relative min-h-[calc(100vh-4rem)] flex items-center bg-gray-900 overflow-hidden">
+                <div class="absolute inset-0 z-0">
+                    <img src="img/Background-FabioStuber.jpg" alt="Hintergrund" class="w-full h-full object-cover opacity-40 dark:opacity-30 scale-105 animate-pulse" style="animation-duration: 10s;">
+                    <div class="absolute inset-0 bg-linear-to-r from-gray-950/90 via-gray-900/60 to-transparent"></div>
+                </div>
 
+                <div class="absolute inset-0 pointer-events-none opacity-25 select-none z-10">
+                    <div class="absolute text-teal-400 text-6xl top-12 right-12 animate-spin" style="animation-duration: 40s;">⭓</div>
+                    <div class="absolute text-white text-2xl bottom-24 left-1/4 animate-bounce" style="animation-duration: 6s;">⭓</div>
+                    <div class="absolute text-teal-500 text-xl top-1/2 right-20 animate-spin" style="animation-duration: 15s;">⭓</div>
+                    <div class="absolute text-gray-500 text-3xl top-20 left-12 animate-bounce" style="animation-duration: 8s;">⭓</div>
+                    <div class="absolute text-teal-300 opacity-40 text-7xl bottom-12 right-1/4 animate-spin" style="animation-duration: 60s;">⭓</div>
+                    <div class="absolute text-white opacity-60 text-lg top-16 left-1/2 animate-bounce" style="animation-duration: 4.5s;">⭓</div>
+                    <div class="absolute text-gray-400 text-4xl bottom-32 right-12 animate-spin" style="animation-duration: 25s; animation-direction: reverse;">⭓</div>
+                    <div class="absolute text-teal-400 opacity-30 text-5xl top-1/3 left-8 animate-bounce" style="animation-duration: 7s;">⭓</div>
+                    <div class="absolute text-gray-300 text-sm top-1/2 left-2/3 animate-spin" style="animation-duration: 10s;">⭓</div>
+                    <div class="absolute text-white opacity-50 text-3xl bottom-8 left-16 animate-bounce" style="animation-duration: 9.5s;">⭓</div>
+                </div>
 
-
-    <div style="max-width: 1000px; margin: auto">
-        <div class="w3-padding-32"></div>
-        <div class="w3-container">
-            <form action="https://formsubmit.co/info@jokers-pub.ch" method="POST" id="form">
-                <input type="hidden" name="_next" value="https://kontakt.jokers-pub.ch/submit" />
-                <input type="hidden" name="_template" value="basic" />
-                <input type="hidden" name="_captcha" value="false" />
-                <input type="hidden" name="_subject" value="JOKERS: KONTAKT FORMULAR" />
-
-                <div class="w3-row">
-                    <div class="w3-half w3-container">
-                        <label for="Vorname">Vorname</label>
-                        <input required type="text" id="Vorname" name="Vorname" placeholder="Dein Vorname..."
-                            oninvalid="this.setCustomValidity('Dein Vorname...')"
-                            oninput="this.setCustomValidity('')" />
-                    </div>
-                    <div class="w3-half w3-container">
-                        <label for="Nachname">Nachname</label>
-                        <input required type="text" id="Nachname" name="Nachname" placeholder="Dein Nachname..."
-                            oninvalid="this.setCustomValidity('Dein Nachname...')"
-                            oninput="this.setCustomValidity('')" />
+                <div class="relative z-20 mx-auto px-4 w-full max-w-7xl text-white py-12">
+                    <div class="max-w-3xl">
+                        <span class="inline-block bg-teal-500 dark:bg-teal-400 text-gray-950 text-base font-bold tracking-widest uppercase px-3 py-1 rounded-sm mb-4 animate-bounce" style="animation-duration: 4s;">
+                            Visuelle Kommunikation
+                        </span>
+                        <h1 class="text-4xl md:text-6xl font-black tracking-tight uppercase leading-none mb-6">
+                            Kreative Ideen <br>
+                            <span class="inline-block bg-linear-to-r from-teal-500 via-cyan-200 to-teal-500 bg-[length:200%_auto] bg-clip-text text-transparent" style="animation: lebendig 4s ease-in-out infinite;">
+                                zum Leben
+                            </span> erweckt.
+                        </h1>
+                        <p class="text-base md:text-base text-gray-300 font-mono tracking-wide max-w-xl mb-8 leading-relaxed text-justify">
+                            Ich bin der Spezialist für alle Aspekte der visuellen Kommunikation. Gemeinsam erschaffen wir starke Designs, die im Gedächtnis bleiben.
+                        </p>
+                        <div class="flex flex-wrap items-center gap-4">
+                            <a class="bg-teal-500 hover:bg-teal-600 dark:bg-teal-400 dark:hover:bg-teal-600 text-gray-950 rounded-sm px-5 py-2.5 text-sm font-medium transition" href="work.html">
+                                MEINE ARBEITEN
+                            </a>
+                            <a class="border border-gray-700 text-gray-400 hover:text-teal-500 dark:hover:text-teal-400 hover:border-teal-500/50 rounded-sm px-5 py-2.5 text-sm font-medium transition backdrop-blur-xs uppercase" href="about.html">
+                                ÜBER MICH
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="w3-row">
-                    <div class="w3-half w3-container">
-                        <label for="E-Mail">E-Mail Adresse</label>
-                        <input required type="mail" id="E-Mail" name="E-Mail" placeholder="Deine E-Mail Adresse..."
-                            oninvalid="this.setCustomValidity('Deine E-Mail Adresse...')"
-                            oninput="this.setCustomValidity('')" />
-                    </div>
+                <div class="absolute bottom-6 left-1/2 -translate-x-1/2 z-30 flex flex-col items-center gap-2 pointer-events-none select-none">
+                    <span class="text-xs uppercase font-mono tracking-[0.25em] text-gray-400 dark:text-gray-500">
+                        Scroll
+                    </span>
 
-                    <div class="w3-half w3-container">
-                        <label for="Telefon">Telefon Nummer</label>
-                        <input required type="tel" id="Telefon" name="Telefon" placeholder="Deine Telefon Nummer..."
-                            oninvalid="this.setCustomValidity('Deine Telefon Nummer...')"
-                            oninput="this.setCustomValidity('')" />
+                    <div class="w-6 h-10 rounded-full border border-teal-500/40 dark:border-teal-400/30 flex justify-center pt-2 backdrop-blur-xs relative">
+                        <div class="w-1.5 h-1.5 bg-teal-500 dark:bg-teal-400 rotate-45 rounded-xs absolute" style="animation: fullBounce 1.2s infinite ease-in-out;">
+                        </div>
                     </div>
                 </div>
+            </section>
 
-                <div class="w3 w3-container">
-                    <label for="Anliegen">Dein Anliegen</label>
-                    <textarea id="Anliegen" name="Anliegen" placeholder="Dein Anliegen..."
-                        style="height: 200px"></textarea>
+            <!-- Marquee / Ticker Section -->
+            <section class="w-full bg-teal-500 dark:bg-teal-400 text-gray-950 py-3 overflow-hidden select-none pointer-events-none whitespace-nowrap border-y border-teal-600/20 no-scroll-anim">
+                <style>
+                    @keyframes marquee {
+                        0% {
+                            transform: translateX(0);
+                        }
 
-                    <input type="submit" value="Einreichen" />
+                        100% {
+                            transform: translateX(-33.333%);
+                        }
+                    }
+
+                    /* Regenbogen-Animation für das Easter Egg */
+                    @keyframes rainbow-text {
+                        0% {
+                            color: #ff0000;
+                        }
+
+                        14% {
+                            color: #ff7f00;
+                        }
+
+                        28% {
+                            color: #ffff00;
+                        }
+
+                        42% {
+                            color: #00ff00;
+                        }
+
+                        57% {
+                            color: #0000ff;
+                        }
+
+                        71% {
+                            color: #4b0082;
+                        }
+
+                        85% {
+                            color: #8b00ff;
+                        }
+
+                        100% {
+                            color: #ff0000;
+                        }
+                    }
+
+                    .marquee-container {
+                        display: flex;
+                        width: max-content;
+                        animation: marquee 20s linear infinite;
+                    }
+
+                    /* Diese Klasse wird per JS aktiviert, wenn das Glück zuschlägt */
+                    .easter-egg-active {
+                        animation: rainbow-text 4s linear infinite !important;
+                        font-size: 1.15rem;
+                        /* Macht es minimal grösser, damit es auffällt */
+                    }
+                </style>
+
+                <div class="marquee-container text-sm font-black tracking-widest uppercase items-center">
+                    <!-- Block 1 -->
+                    <div class="flex items-center gap-6 px-3">
+                        <span>Grafikdesign</span> <span class="text-xs">⭓</span>
+                        <span>Visuelle Kommunikation</span> <span class="text-xs">⭓</span>
+                        <span>Corporate Identity</span> <span class="text-xs">⭓</span>
+                        <span>Branding</span> <span class="text-xs">⭓</span>
+                        <span>Layout & Satz</span> <span class="text-xs">⭓</span>
+                        <span>Printdesign</span> <span class="text-xs">⭓</span>
+                        <span>Flyer & Broschüren</span> <span class="text-xs">⭓</span>
+                        <span>Bildbearbeitung</span> <span class="text-xs">⭓</span>
+                        <span>Adobe Creative Cloud</span> <span class="text-xs">⭓</span>
+                        <span>Photoshop & Illustrator</span> <span class="text-xs">⭓</span>
+                        <span>InDesign</span> <span class="text-xs">⭓</span>
+                        <span class="ticker-target">Mediamatik</span> <span class="text-xs">⭓</span>
+                        <span>Digitale Medien</span> <span class="text-xs">⭓</span>
+                        <span>Webdesign</span> <span class="text-xs">⭓</span>
+                        <span>UI/UX Design</span> <span class="text-xs">⭓</span>
+                        <span>Responsive Webseiten</span> <span class="text-xs">⭓</span>
+                        <span>WordPress & Typo3</span> <span class="text-xs">⭓</span>
+                        <span>CMS-Systeme</span> <span class="text-xs">⭓</span>
+                        <span>HTML & CSS</span> <span class="text-xs">⭓</span>
+                        <span>Social Media Content</span> <span class="text-xs">⭓</span>
+                        <span>Videoproduktion</span> <span class="text-xs">⭓</span>
+                        <span>Fotoproduktion</span> <span class="text-xs">⭓</span>
+                        <span>Kreative Konzepte</span> <span class="text-xs">⭓</span>
+                        <span>Content Creation</span> <span class="text-xs">⭓</span>
+                        <span>Projektmanagement</span> <span class="text-xs">⭓</span>
+                    </div>
+                    <!-- Block 2 -->
+                    <div class="flex items-center gap-6 px-3" aria-hidden="true">
+                        <span>Grafikdesign</span> <span class="text-xs">⭓</span>
+                        <span>Visuelle Kommunikation</span> <span class="text-xs">⭓</span>
+                        <span>Corporate Identity</span> <span class="text-xs">⭓</span>
+                        <span>Branding</span> <span class="text-xs">⭓</span>
+                        <span>Layout & Satz</span> <span class="text-xs">⭓</span>
+                        <span>Printdesign</span> <span class="text-xs">⭓</span>
+                        <span>Flyer & Broschüren</span> <span class="text-xs">⭓</span>
+                        <span>Bildbearbeitung</span> <span class="text-xs">⭓</span>
+                        <span>Adobe Creative Cloud</span> <span class="text-xs">⭓</span>
+                        <span>Photoshop & Illustrator</span> <span class="text-xs">⭓</span>
+                        <span>InDesign</span> <span class="text-xs">⭓</span>
+                        <span class="ticker-target">Mediamatik</span> <span class="text-xs">⭓</span>
+                        <span>Digitale Medien</span> <span class="text-xs">⭓</span>
+                        <span>Webdesign</span> <span class="text-xs">⭓</span>
+                        <span>UI/UX Design</span> <span class="text-xs">⭓</span>
+                        <span>Responsive Webseiten</span> <span class="text-xs">⭓</span>
+                        <span>WordPress & Typo3</span> <span class="text-xs">⭓</span>
+                        <span>CMS-Systeme</span> <span class="text-xs">⭓</span>
+                        <span>HTML & CSS</span> <span class="text-xs">⭓</span>
+                        <span>Social Media Content</span> <span class="text-xs">⭓</span>
+                        <span>Videoproduktion</span> <span class="text-xs">⭓</span>
+                        <span>Fotoproduktion</span> <span class="text-xs">⭓</span>
+                        <span>Kreative Konzepte</span> <span class="text-xs">⭓</span>
+                        <span>Content Creation</span> <span class="text-xs">⭓</span>
+                        <span>Projektmanagement</span> <span class="text-xs">⭓</span>
+                    </div>
+                    <!-- Block 3 -->
+                    <div class="flex items-center gap-6 px-3" aria-hidden="true">
+                        <span>Grafikdesign</span> <span class="text-xs">⭓</span>
+                        <span>Visuelle Kommunikation</span> <span class="text-xs">⭓</span>
+                        <span>Corporate Identity</span> <span class="text-xs">⭓</span>
+                        <span>Branding</span> <span class="text-xs">⭓</span>
+                        <span>Layout & Satz</span> <span class="text-xs">⭓</span>
+                        <span>Printdesign</span> <span class="text-xs">⭓</span>
+                        <span>Flyer & Broschüren</span> <span class="text-xs">⭓</span>
+                        <span>Bildbearbeitung</span> <span class="text-xs">⭓</span>
+                        <span>Adobe Creative Cloud</span> <span class="text-xs">⭓</span>
+                        <span>Photoshop & Illustrator</span> <span class="text-xs">⭓</span>
+                        <span>InDesign</span> <span class="text-xs">⭓</span>
+                        <span class="ticker-target">Mediamatik</span> <span class="text-xs">⭓</span>
+                        <span>Digitale Medien</span> <span class="text-xs">⭓</span>
+                        <span>Webdesign</span> <span class="text-xs">⭓</span>
+                        <span>UI/UX Design</span> <span class="text-xs">⭓</span>
+                        <span>Responsive Webseiten</span> <span class="text-xs">⭓</span>
+                        <span>WordPress & Typo3</span> <span class="text-xs">⭓</span>
+                        <span>CMS-Systeme</span> <span class="text-xs">⭓</span>
+                        <span>HTML & CSS</span> <span class="text-xs">⭓</span>
+                        <span>Social Media Content</span> <span class="text-xs">⭓</span>
+                        <span>Videoproduktion</span> <span class="text-xs">⭓</span>
+                        <span>Fotoproduktion</span> <span class="text-xs">⭓</span>
+                        <span>Kreative Konzepte</span> <span class="text-xs">⭓</span>
+                        <span>Content Creation</span> <span class="text-xs">⭓</span>
+                        <span>Projektmanagement</span> <span class="text-xs">⭓</span>
+                    </div>
                 </div>
-            </form>
-            <div id="message" class="w3 w3-container">
-                <p>Bitte warten... Anfrage wird versendet.</p>
-            </div>
-        </div>
-        <div class="w3-padding-64"></div>
-    </div>
+            </section>
 
-    <script>
-        document.getElementById("message").style.display = "none";
-        document.getElementById("form").onsubmit = function (e) {
-            document.getElementById("form").style.display = "none";
-            document.getElementById("message").style.display = "block";
-        };
-    </script>
-</body>
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    const meinName = "Fabio Stuber";
+
+                    const zufall = Math.floor(Math.random() * 1000) + 1;
+
+                    if (zufall === 1) {
+                        const targets = document.querySelectorAll('.ticker-target');
+
+                        targets.forEach(el => {
+                            el.textContent = meinName;
+                            el.classList.add('easter-egg-active');
+                        });
+                    }
+                });
+            </script>
+
+            <section class="space-y-16 mt-16">
+                <!-- Über mich Section -->
+                <section class="mx-auto px-4 max-w-7xl">
+                    <div class="bg-gray-100 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-2xl p-8 md:p-12 relative overflow-hidden group">
+                        <div class="absolute -right-8 -top-8 text-gray-200 dark:text-gray-800/40 text-9xl font-black select-none pointer-events-none transition-transform duration-500 group-hover:scale-110">⭓</div>
+
+                        <div class="relative z-10 max-w-3xl space-y-6">
+                            <div class="space-y-2">
+                                <h2 class="text-sm font-bold tracking-widest text-teal-500 dark:text-teal-400 uppercase">Über mich</h2>
+                                <p class="text-2xl md:text-4xl font-black tracking-tight text-gray-800 dark:text-white uppercase">FABIO STUBER</p>
+                            </div>
+
+                            <p class="text-base text-gray-600 dark:text-gray-400 leading-relaxed max-w-2xl font-mono tracking-wide text-justify">
+                                Seit meiner Jugend bin ich fasziniert von der kreativen und technischen Welt der Mediamatik. Geboren 2001 und aufgewachsen in Herzogenbuchsee, habe ich meine Leidenschaft zum Beruf gemacht. Ich liebe es, Ideen in die Tat umzusetzen und digitale Erlebnisse zu schaffen,
+                                die
+                                begeistern.
+                            </p>
+
+                            <div class="pt-2">
+                                <a href="about" class="inline-flex items-center gap-2 text-teal-500 hover:text-teal-600 dark:text-teal-400 dark:hover:text-teal-300 font-bold uppercase tracking-wider text-sm group/link transition-colors">
+                                    Mehr erfahren
+                                    <span class="inline-block transition-transform duration-300 group-hover/link:translate-x-2 text-lg leading-none">➔</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Open to Work Section -->
+                <section id="open-to-work" class="mx-auto px-4 max-w-7xl">
+                    <div class="bg-gray-100 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-2xl p-8 md:p-12 relative overflow-hidden group border-2 border-teal-500 dark:border-teal-400">
+                        <div class="absolute -right-8 -top-8 text-teal-500/10 dark:text-teal-400/10 text-9xl font-black select-none pointer-events-none transition-transform duration-500 group-hover:scale-110">⭓</div>
+
+                        <div>
+                            <div class="flex flex-row gap-4 items-center mb-4">
+                                <div class="space-y-0.5">
+                                    <span class="text-sm font-mono tracking-wider text-teal-600 dark:text-teal-400 font-bold uppercase block flex items-center gap-2">
+                                        <span class="flex h-2 w-2 relative">
+                                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
+                                            <span class="relative inline-flex rounded-full h-2 w-2 bg-teal-500"></span>
+                                        </span>
+                                        Aktueller Status
+                                    </span>
+                                    <h3 class="text-2xl md:text-4xl font-black tracking-tight text-gray-800 dark:text-white uppercase">Bereit für neue Herausforderungen (Open to Work)</h3>
+                                    <p class="text-sm font-mono text-gray-500 dark:text-gray-400">VERFüGBAR AB: SOFORT</p>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-wrap gap-2 mb-2">
+                                <p class="bg-teal-500 dark:bg-teal-400 text-gray-950 rounded-sm px-1 py-1 text-xs">Mediamatik</p>
+                                <p class="bg-blue-500 dark:bg-blue-400 text-gray-950 rounded-sm px-1 py-1 text-xs">Visuelle Kommunikation</p>
+                                <p class="bg-amber-500 dark:bg-amber-400 text-gray-950 rounded-sm px-1 py-1 text-xs">IT-Support & Technik</p>
+                                <p class="bg-purple-500 dark:bg-purple-400 text-gray-950 rounded-sm px-1 py-1 text-xs">Web- & Grafikdesign</p>
+                                <p class="bg-green-500 dark:bg-green-400 text-gray-950 rounded-sm px-1 py-1 text-xs">Eventplanung</p>
+                            </div>
+
+                            <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed font-sans mb-4 text-justify">
+                                Nach dem erfolgreichen Abschluss meiner zweiten Ausbildungen als Mediamatiker im Jahr 2025 und wertvollen Erfahrungen im Medienbereich bin ich aktuell auf der Suche nach einer neuen beruflichen Aufgabe. Ich bringe eine vielseitige Mischung aus technischer Sicht,
+                                klarer Kommunikation und
+                                kreativer Mediengestaltungmit.
+                                Egal ob in welchem Bereich der Mediamatik, Event-Planung oder in einem anderen spannenden Schnittstellen-Beruf: Ich freue mich über jede Kontaktaufnahme und ein persönliches Kennenlernen.
+                            </p>
+                        </div>
+
+                        <div>
+                            <hr class="border-gray-200 dark:border-gray-800/80 my-3" />
+                            <div class="flex flex-wrap gap-2 pt-1">
+                                <a href="/contact" class="bg-teal-500 hover:bg-teal-600 dark:bg-teal-400 dark:hover:bg-teal-600 text-gray-950 rounded-sm px-3 py-1.5 text-xs font-medium transition uppercase">
+                                    Kontakt aufnehmen
+                                </a>
+                                <a href="/about" class="border border-gray-300 dark:border-gray-700 text-gray-600 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-400 hover:border-teal-500/50 text-xs rounded-sm px-3 py-1.5 font-medium transition uppercase">
+                                    Mehr über mich
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Das Kreativ-Koffein-Barometer -->
+                <section class="mx-auto px-4 max-w-7xl mt-6">
+                    <div class="bg-gray-100 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-2xl p-8 md:p-12 relative overflow-hidden group">
+                        <div class="absolute -right-8 -top-8 text-gray-200 dark:text-gray-800/40 text-9xl font-black select-none pointer-events-none transition-transform duration-500 group-hover:scale-110">☕</div>
+                        <div class="relative z-10 max-w-3xl space-y-4">
+                            <div class="space-y-1">
+                                <span class="text-sm font-bold tracking-widest text-teal-500 dark:text-teal-400 uppercase flex items-center gap-2">
+                                    <span class="flex h-2 w-2 relative">
+                                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
+                                        <span class="relative inline-flex rounded-full h-2 w-2 bg-teal-500"></span>
+                                    </span>
+                                    Live aus Herzogenbuchsee
+                                </span>
+                                <p class="text-2xl md:text-4xl font-black tracking-tight text-gray-800 dark:text-white uppercase">
+                                    Mein Kreativ-Koffein-Barometer
+                                </p>
+                            </div>
+
+                            <!-- Hier werden die Kaffees und das Wetter angezeigt -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2 font-mono text-sm">
+                                <div class="bg-gray-200/40 dark:bg-gray-800/40 px-4 py-3 rounded-md border border-gray-200/20 dark:border-gray-700/20 backdrop-blur-xs">
+                                    <span class="text-teal-500 dark:text-teal-400 font-bold">Koffeinpegel heute:</span>
+                                    <span id="coffee-count" class="block text-lg font-black text-gray-800 dark:text-white mt-1">Berechne...</span>
+                                </div>
+                                <div class="bg-gray-200/40 dark:bg-gray-800/40 px-4 py-3 rounded-md border border-gray-200/20 dark:border-gray-700/20 backdrop-blur-xs">
+                                    <span class="text-teal-500 dark:text-teal-400 font-bold">Aktuelles Wetter:</span>
+                                    <span id="weather-status" class="block text-lg font-black text-gray-800 dark:text-white mt-1">Lade Wetter...</span>
+                                </div>
+                            </div>
+
+                            <p id="kreativ-status" class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed font-sans text-justify pt-2">
+                                Analysiere die aktuelle Lage für produktiven Code...
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Highlights Section -->
+                <section class="mx-auto px-4 max-w-7xl">
+                    <div class="mb-8">
+                        <h2 class="text-sm font-bold tracking-widest text-teal-500 dark:text-teal-400 uppercase mb-2">Highlights</h2>
+                        <p class="text-3xl font-black tracking-tight text-gray-800 dark:text-white uppercase">Das habe ich gemacht</p>
+                    </div>
+
+                    <div class=" grid grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(350px,1fr))] gap-6 items-stretch mb-8">
+                        <!-- Projekt 1 -->
+                        <div class="bg-gray-100 dark:bg-gray-900 border border-gray-200/50 dark:border-gray-800/50 rounded-xl p-6 hover:border-teal-500/20 dark:hover:border-teal-400/20 transition duration-300 relative overflow-hidden group flex flex-col justify-between">
+                            <div class="absolute -right-8 -top-8 text-gray-200 dark:text-gray-800/40 text-9xl font-black select-none pointer-events-none transition-transform duration-500 group-hover:scale-110">⭓</div>
+                            <div>
+                                <div class="flex flex-row gap-4 items-center mb-4">
+                                    <img class="h-auto w-20 dark:invert transition duration-200" src="img/Logo-Jokers.png" alt="Logo">
+                                    <div class="space-y-0.5">
+                                        <span class="text-sm font-mono tracking-wider text-teal-500 dark:text-teal-400 font-bold uppercase block">Webauftritt (2023 - Heute)</span>
+                                        <h3 class="text-xl font-black tracking-tight uppercase text-gray-800 dark:text-white leading-tight">Joker's Pub</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <hr class="border-gray-200 dark:border-gray-800/80 my-3" />
+                                <div class="flex flex-wrap gap-2 pt-1">
+                                    <a href="https://www.jokers-pub.ch/" target="_blank" rel="noopener noreferrer" class="bg-teal-500 hover:bg-teal-600 dark:bg-teal-400 dark:hover:bg-teal-600 text-gray-950 rounded-sm px-3 py-1.5 text-xs font-medium transition uppercase">
+                                        Webseite
+                                    </a>
+                                    <a href="projects#jokers-pub" class="border border-gray-300 dark:border-gray-700 text-gray-600 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-400 hover:border-teal-500/50 text-xs rounded-sm px-3 py-1.5 font-medium transition uppercase">
+                                        Details
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Projekt 2 -->
+                        <div class="bg-gray-100 dark:bg-gray-900 border border-gray-200/50 dark:border-gray-800/50 rounded-xl p-6 hover:border-teal-500/20 dark:hover:border-teal-400/20 transition duration-300 relative overflow-hidden group flex flex-col justify-between">
+                            <div class="absolute -right-8 -top-8 text-gray-200 dark:text-gray-800/40 text-9xl font-black select-none pointer-events-none transition-transform duration-500 group-hover:scale-110">⭓</div>
+                            <div>
+                                <div class="flex flex-row gap-4 items-center mb-4">
+                                    <img class="h-auto w-20 invert dark:invert-0 transition duration-200" src="img/Logo-BlessBern.png" alt="Logo">
+                                    <div class="space-y-0.5">
+                                        <span class="text-sm font-mono tracking-wider text-teal-500 dark:text-teal-400 font-bold uppercase block">Webauftritt (2025 - Heute)</span>
+                                        <h3 class="text-xl font-black tracking-tight uppercase text-gray-800 dark:text-white leading-tight">BLESS BERN</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <hr class="border-gray-200 dark:border-gray-800/80 my-3" />
+                                <div class="flex flex-wrap gap-2 pt-1">
+                                    <a href="https://www.blessbern.ch/" target="_blank" rel="noopener noreferrer" class="bg-teal-500 hover:bg-teal-600 dark:bg-teal-400 dark:hover:bg-teal-600 text-gray-950 rounded-sm px-3 py-1.5 text-xs font-medium transition uppercase">
+                                        Webseite
+                                    </a>
+                                    <a href="projects#bless-bern"
+                                        class="border border-gray-300 dark:border-gray-700 text-gray-600 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-400 hover:border-teal-500/50 text-xs rounded-sm px-3 py-1.5 font-medium transition backdrop-blur-xs uppercase">
+                                        Details
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <a href="projects" class="inline-flex items-center gap-2 text-teal-500 hover:text-teal-600 dark:text-teal-400 dark:hover:text-teal-300 font-bold uppercase tracking-wider text-sm group/link transition-colors">
+                            Weitere Projekte
+                            <span class="inline-block transition-transform duration-300 group-hover/link:translate-x-2 text-lg leading-none">➔</span>
+                        </a>
+                    </div>
+                </section>
+
+                <!-- Ablauf / Schritte Section -->
+                <section class=" mx-auto px-4 max-w-7xl">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
+                        <div class="bg-gray-100 dark:bg-gray-900 p-8 rounded-xl border border-gray-200/50 dark:border-gray-800/50 backdrop-blur-sm group hover:border-teal-500/30 transition duration-300 relative overflow-hidden text-justify">
+                            <div class="absolute -right-8 -top-8 text-gray-200 dark:text-gray-800/40 text-9xl font-black select-none pointer-events-none transition-transform duration-500 group-hover:scale-110">⭓</div>
+                            <div class="text-teal-500 dark:text-teal-400 text-3xl font-black mb-2 transition-transform group-hover:scale-110 duration-200">01</div>
+                            <h3 class="font-bold text-lg uppercase tracking-wider mb-2 text-center md:text-left">Konzept</h3>
+                            <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Alles beginnt mit einer starken Idee und einer klaren Strategie für dein Projekt.</p>
+                        </div>
+
+                        <div class="bg-gray-100 dark:bg-gray-900 p-8 rounded-xl border border-gray-200/50 dark:border-gray-800/50 backdrop-blur-sm group hover:border-teal-500/30 transition duration-300 relative overflow-hidden text-justify">
+                            <div class="absolute -right-8 -top-8 text-gray-200 dark:text-gray-800/40 text-9xl font-black select-none pointer-events-none transition-transform duration-500 group-hover:scale-110">⭓</div>
+                            <div class="text-teal-500 dark:text-teal-400 text-3xl font-black mb-2 transition-transform group-hover:scale-110 duration-200">02</div>
+                            <h3 class="font-bold text-lg uppercase tracking-wider mb-2 text-center md:text-left">Design</h3>
+                            <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Moderne, saubere und auffallende Gestaltung, genau auf dich zugeschnitten.</p>
+                        </div>
+
+                        <div class="bg-gray-100 dark:bg-gray-900 p-8 rounded-xl border border-gray-200/50 dark:border-gray-800/50 backdrop-blur-sm group hover:border-teal-500/30 transition duration-300 relative overflow-hidden text-justify">
+                            <div class="absolute -right-8 -top-8 text-gray-200 dark:text-gray-800/40 text-9xl font-black select-none pointer-events-none transition-transform duration-500 group-hover:scale-110">⭓</div>
+                            <div class="text-teal-500 dark:text-teal-400 text-3xl font-black mb-2 transition-transform group-hover:scale-110 duration-200">03</div>
+                            <h3 class="font-bold text-lg uppercase tracking-wider mb-2 text-center md:text-left">Resultat</h3>
+                            <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Visuelle Kommunikation, die funktioniert und deine Zielgruppe begeistert.</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer id="footer"></footer>
+
+        <!-- Cookie Banner -->
+        <div id="cookieBanner"></div>
+
+        <!-- functions -->
+        <script src="js/script.js"></script>
+    </body>
 
 </html>

@@ -1,79 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&display=swap');
-
-body {
-    background-color: #d7b697;
+html {
+    scroll-behavior: smooth;
 }
 
-h1 {
-  font-family: "Tinos", serif;
-  font-weight: 700;
-  font-style: normal;
-    color: #003f75;
-    text-transform: uppercase;
-    font-size: 40px;
-    line-height: 50px;
-    text-align: center;
+[id] {
+    scroll-margin-top: 100px;
 }
 
-h2 {
-  font-family: "Tinos", serif;
-  font-weight: 700;
-  font-style: normal;
-    text-transform: uppercase;
-    color: #003f75;
+@keyframes border-glow {
 
+    0%,
+    100% {
+        border-color: transparent;
+    }
+
+    30%,
+    70% {
+        border-color: oklch(70.4% 0.14 182.503);
+    }
 }
 
-h3 {
-  font-family: "Tinos", serif;
-  font-weight: 700;
-  font-style: normal;
-    text-transform: uppercase;
-    color: #025b5c;
-    font-size: 16px;
-
-
+[id]:target {
+    animation: border-glow 2s ease-in-out;
 }
 
-
-label {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-    line-height: 30px;
-    color: #000000;
+.no-copy {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-p {
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-    line-height: 30px;
-    color: #000000;
+::-webkit-scrollbar {
+    width: 15px;
 }
 
-p.tiny {
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-    font-size: 13px;
-    line-height: 20px;
+::-webkit-scrollbar-track {
+    background: transparent;
 }
 
-
-.headertext {
-    background-color: 1px solid rgba(255, 255, 255, .4);
-    padding-top: 80px;
-    position: relative;
+::-webkit-scrollbar-thumb {
+    background-color: #cbd5e1;
+    border-radius: 20px;
+    border: 5px solid transparent;
+    background-clip: padding-box;
 }
 
-a:hover {
-    background-color: #958450;
-    color: #06101b;
-
+::-webkit-scrollbar-thumb:hover {
+    background-color: #14b8a6;
 }
 
+html.dark ::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+    background-color: #4b5563;
+    border: 3px solid transparent;
+    background-clip: padding-box;
+}
+
+html.dark ::-webkit-scrollbar-thumb:hover {
+    background-color: #2dd4bf;
+}
+
+@keyframes fullBounce {
+
+    0%,
+    100% {
+        top: 6px;
+    }
+
+    50% {
+        top: 28px;
+    }
+}
